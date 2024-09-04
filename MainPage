@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Integrated BIM-Blockchain Platform</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/User registration">User registration</a></li>
+            <li><a href="/Project registration">Project registration</a></li>
+            <li><a href="/External registration">External registration</a></li>
+            <li><a href="/Data transfer">Data transfer</a></li>
+            <li><a href="/Training">Training</a></li>
+            <li><a href="/Certification">Certification</a></li>
+            <li><a href="/Certificate Authentication">Certificate Authentication</a></li>
+            <li><a href="/Payments">Payments</a></li>
+            <li><a href="/IoT Device registration">IoT Device registration</a></li>
+            <li><a href="/Data-Device tracking">Data-Device tracking</a></li>
+            <li><a href="/Retrieve Records">Retrieve Records</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <p>Welcome to the Platform!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BIM Platform</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

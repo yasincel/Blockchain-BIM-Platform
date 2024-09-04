@@ -1,0 +1,55 @@
+<!-- data_device_tracking.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Device Tracking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Integrated BIM-Blockchain Platform</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/User registration">User registration</a></li>
+            <li><a href="/Project registration">Project registration</a></li>
+            <li><a href="/External registration">External registration</a></li>
+            <li><a href="/Data transfer">Data transfer</a></li>
+            <li><a href="/Training">Training</a></li>
+            <li><a href="/Certification">Certification</a></li>
+            <li><a href="/Certificate Authentication">Certificate Authentication</a></li>
+            <li><a href="/Payments">Payments</a></li>
+            <li><a href="/IoT Device registration">IoT Device registration</a></li>
+            <li><a href="/Data-Device tracking">Data-Device tracking</a></li>
+            <!-- Add links to other sections as needed -->
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h2>Data-Device Tracking</h2>
+        <form action="/track_data_device" method="post">
+            <label for="device_name">Device Name:</label>
+            <input type="text" id="device_name" name="device_name" required>
+            <br>
+            <label for="tracking_parameter">Tracking Parameter:</label>
+            <input type="text" id="tracking_parameter" name="tracking_parameter" required>
+            <br>
+            <label for="time_interval">Time Interval (seconds):</label>
+            <input type="number" id="time_interval" name="time_interval" required>
+            <br>
+            <input type="submit" value="Track Data from Device">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BIM Platform</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

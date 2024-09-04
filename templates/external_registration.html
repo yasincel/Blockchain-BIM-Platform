@@ -1,0 +1,51 @@
+<!-- external_registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Integrated BIM-Blockchain Platform</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/User registration">User registration</a></li>
+            <li><a href="/Project registration">Project registration</a></li>
+            <li><a href="/External registration">External registration</a></li>
+            <!-- Add links to other sections as needed -->
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h2>External Registration</h2>
+        <form action="/register_external" method="post">
+            <label for="organization_name">Organization Name:</label>
+            <input type="text" id="organization_name" name="organization_name" required>
+            <br>
+            <label for="contact_person">Contact Person:</label>
+            <input type="text" id="contact_person" name="contact_person" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <input type="submit" value="Register External Entity">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BIM Platform</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

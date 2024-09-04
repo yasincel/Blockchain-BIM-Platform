@@ -1,0 +1,54 @@
+<!-- iot_device_registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Device Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Integrated BIM-Blockchain Platform</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/User registration">User registration</a></li>
+            <li><a href="/Project registration">Project registration</a></li>
+            <li><a href="/External registration">External registration</a></li>
+            <li><a href="/Data transfer">Data transfer</a></li>
+            <li><a href="/Training">Training</a></li>
+            <li><a href="/Certification">Certification</a></li>
+            <li><a href="/Certificate Authentication">Certificate Authentication</a></li>
+            <li><a href="/Payments">Payments</a></li>
+            <li><a href="/IoT Device registration">IoT Device registration</a></li>
+            <!-- Add links to other sections as needed -->
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h2>IoT Device Registration</h2>
+        <form action="/register_iot_device" method="post">
+            <label for="device_name">Device Name:</label>
+            <input type="text" id="device_name" name="device_name" required>
+            <br>
+            <label for="device_type">Device Type:</label>
+            <input type="text" id="device_type" name="device_type" required>
+            <br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <br>
+            <input type="submit" value="Register IoT Device">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BIM Platform</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

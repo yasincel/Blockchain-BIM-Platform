@@ -1,0 +1,53 @@
+<!-- project_registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Integrated BIM-Blockchain Platform</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/User registration">User registration</a></li>
+            <li><a href="/Project registration">Project registration</a></li>
+            <!-- Add links to other sections as needed -->
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h2>Project Registration</h2>
+        <form action="{{ url_for('project_registration') }}" method="post">
+            <label for="project_name">Project Name:</label>
+            <input type="text" id="project_name" name="project_name" required>
+            <br>
+            <label for="training_data">Training Data:</label>
+            <input type="text" id="training_data" name="training_data" required>
+            <br>
+            <label for="design_data">Design Data:</label>
+            <input type="text" id="design_data" name="design_data" required>
+            <br>
+            <label for="material_data">Material Data:</label>
+            <input type="text" id="material_data" name="material_data" required>
+            <br>
+            <label for="energy_data">Energy Data:</label>
+            <input type="text" id="energy_data" name="energy_data" required>
+            <br>
+            <input type="submit" value="Register Project">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BIM Platform</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

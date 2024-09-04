@@ -1,0 +1,45 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM-Blockchain Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Integrated BIM-Blockchain Platform</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{{ url_for('user_registration') }}">User Registration</a></li>
+            <li><a href="{{ url_for('project_registration') }}">Project Registration</a></li>
+            <li><a href="{{ url_for('external_registration') }}">External Registration</a></li>
+            <li><a href="{{ url_for('certification') }}">Certification</a></li>
+            <li><a href="{{ url_for('training') }}">Training</a></li>
+            <li><a href="{{ url_for('payments') }}">Payments</a></li>
+            <li><a href="{{ url_for('iot_device_registration') }}">IoT Device Registration</a></li>
+            <li><a href="{{ url_for('data_device_tracking') }}">Data-Device Tracking</a></li>
+            <li><a href="{{ url_for('retrieve_records') }}">Retrieve Records</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <h2>Welcome to the Integrated BIM-Blockchain Platform</h2>
+        <p>
+            This platform provides a seamless integration of Building Information Modeling (BIM) and Blockchain technologies.
+            Users can register, manage projects, transfer data, undergo training, request certification, and more.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BIM-Blockchain Platform</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
