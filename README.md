@@ -1,7 +1,7 @@
-# Blockchain-BIM-Platform
-Blockchain integrated BIM Platfom
+# Blockchain-BIM-Test-Platform
+Blockchain integrated BIM Test Platfom
 
-Guide for setting up the BIM blockchain platform for data entry, including user and project registration, training, and IT registration:
+Guide for setting up the BIM blockchain test platform for data entry, including user and project registration, training, and IT registration:
 
     Install Dependencies:
         Ensure you have Node.js (latest version) and Python installed on your system.
